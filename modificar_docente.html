@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualizar Nombre y Apellido</title>
+</head>
+<body>
+    <a href="index.html">
+        <button type="button">Atrás</button>
+    </a>
+    <!--Título-->
+    <h2>Actualizar Nombre y Apellido</h2>
+    <!--Formulario Modificar Docente-->
+    <form action="modificar_docente.php" method="post">
+        <p>
+            <label for="id">Ingrese su ID:</label>
+            <input type="text" id="id" name="id" size="1">
+            <br>
+        </p>
+        <p>
+            <label for="nuevo_nombre">Nuevo Nombre:</label>
+            <input type="text" id="nuevo_nombre" name="nuevo_nombre" required>
+            <br>
+        </p>
+        <p>
+            <label for="nuevo_apellido">Nuevo Apellido:</label>
+            <input type="text" id="nuevo_apellido" name="nuevo_apellido" required>
+            <br>
+        </p>
+        <input type="submit" value="Actualizar">
+    </form>
+</body>
+</html>

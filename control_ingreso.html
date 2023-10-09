@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Ingreso</title>
+</head>
+<body>
+    <!--Botón atrás-->
+    <a href="index.html">
+        <button type="button">Atrás</button>
+    </a>
+    <!--Título-->
+    <h2>Control de Ingreso</h2>
+    <!--Formulario de registro-->
+    <form action="control_ingreso.php" method="post">
+        <p>
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" required>
+            <br>
+        </p>
+        <p>
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora" name="hora" required>
+            <br>
+        </p>
+        <p>
+            <label for="id">Número de ID:</label>
+            <input type="text" id="id" name="id" size="1" required>
+        <br>
+        </p>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
