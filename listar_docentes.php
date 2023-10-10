@@ -16,7 +16,7 @@
     $seleccionarDocente = mysqli_query($conexion, "SELECT docentes.id, docentes.nombre, docentes.apellido, control_ingresos.fecha, control_ingresos.hora FROM docentes LEFT JOIN control_ingresos ON docentes.id = control_ingresos.id");
     // Mostrar consulta
     while ($docente = mysqli_fetch_array($seleccionarDocente)) {
-        echo "<p><strong>Estimado/a: " . $docente['nombre'] . " " . $docente['apellido'] . " su número de identificación es:</strong> " . $docente['hora'] . "</p>";
+        echo "<p><strong>Estimado/a: " . $docente['nombre'] . " " . $docente['apellido'] . " número ID: " . $docente['id'] . " , sus registros de ingresos son los siguientes:</strong> " . $docente['fecha'] . " " . $docente['hora'] . "</p>";
     }
     // Cierra la conexión
     mysqli_close($conexion);
