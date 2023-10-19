@@ -3,43 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Paulo Abarca Matamala">
+    <meta name="description" content="Gestion Docente">
+    <meta name="keywords" content="Gestion, Docente">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Bienvenido a Registro Docente!</title>
 </head>
 <body>
-    <h1>Bienvenido a Gestión Docente</h2><br>
-    <!--Botón Registro Docente-->
-    <p>
-        <a href="registro_docente.html">
-            <button type="button">Registrar Docente</button>
-        </a>    
-        <br>
-    </p>
-    <!--Botón Modificar Docente-->
-    <p>
-        <a href="modificar_docente.html">
-            <button type="button">Modificar Datos Docentes</button>
-        </a>
-        <br>
-    </p>
-    <!--Botón Eliminar Docente-->
-    <p>
-        <a href="eliminar_docente.html">
-            <button type="button">Eliminar Docente</button>
-        </a>
-        <br>
-    </p>
-    <!--Botón Control de Ingreso-->
-    <p>
-        <a href="control_ingreso.html">
-            <button type="button">Registre su Ingreso Docente</button>
-        </a>
-        <br>
-    </p>
-    <!--Botón Listar Ingresos-->
-    <p>
-        <a href="listar_docentes.php">
-            <button type="button">Ir a Ingresos Docentes</button>
-        </a>
-    </p>
+    <header>
+            
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <!--Título Principal-->
+            <h1>Bienvenido a Gestión Docente</h1>
+            <nav>
+                <ul>
+                    <li><a href="registro_docente.html"><button class="btn" type="button">Registrar Docente</button></a></li><br>
+                    <li><a href="modificar_docente.html"><button class="btn" type="button">Modificar Datos Docentes</button></a></li><br>
+                    <li><a href="eliminar_docente.html"><button class="btn" type="button">Eliminar Docente</button></a></li><br>
+                    <li><a href="control_ingreso.html"><button class="btn" type="button">Registre su Ingreso Docente</button></a></li><br>
+                    <li><a href="listar_docentes.php"><button class="btn" type="button">Ir a Ingresos Docentes</button></a></li>
+                </ul>
+            </nav>
+        </section>
+        <figure class="cont_severus">
+            <img class="severus" src="assets/img/severus.jpg" alt="Imagen Principal Docencia">
+        </figure>
+        <!--Contenedor adicional-->
+        <aside>
+            <h3>Enlaces útiles</h3>
+            <ul>
+                <li><a href="#faq">Preguntas frecuentes</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+            </ul>
+        </aside>
+        
+    </main>
+    <footer>
+        <p>&copy; 2023 Nombre de la Empresa. Todos los derechos reservados.</p>
+        <nav>
+            <ul>
+                <li><a href="#privacidad">Política de privacidad</a></li>
+                <li><a href="#terminos">Términos de servicio</a></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 </html>
