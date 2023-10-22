@@ -11,52 +11,51 @@
     <title>Bienvenido a Registro Docente!</title>
 </head>
 <body>
-    <header>
-            
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#productos">Productos</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <!--Título Principal-->
+    <div class="grid-layout">
+        <header class="caja c1">
             <h1>Bienvenido a Gestión Docente</h1>
-            <nav>
-                <ul>
-                    <li><a href="registro_docente.html"><button class="btn" type="button">Registrar Docente</button></a></li><br>
-                    <li><a href="modificar_docente.html"><button class="btn" type="button">Modificar Datos Docentes</button></a></li><br>
-                    <li><a href="eliminar_docente.html"><button class="btn" type="button">Eliminar Docente</button></a></li><br>
-                    <li><a href="control_ingreso.html"><button class="btn" type="button">Registre su Ingreso Docente</button></a></li><br>
-                    <li><a href="listar_docentes.php"><button class="btn" type="button">Ir a Ingresos Docentes</button></a></li>
+        </header>
+        <nav class="caja c2">
+                <ul class="nav">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </nav>
-        </section>
-        <figure class="cont_severus">
-            <img class="severus" src="assets/img/severus.jpg" alt="Imagen Principal Docencia">
-        </figure>
-        <!--Contenedor adicional-->
-        <aside>
-            <h3>Enlaces útiles</h3>
-            <ul>
-                <li><a href="#faq">Preguntas frecuentes</a></li>
-                <li><a href="#testimonios">Testimonios</a></li>
+        <main class="caja c3">    
+            <ul class="nav">
+                <li><a href="registro_docente.html"><button class="btn" type="button">Registrar Docente</button></a></li>
+                <li><a href="modificar_docente.html"><button class="btn" type="button">Modificar Datos Docentes</button></a></li>
+                <li><a href="eliminar_docente.html"><button class="btn" type="button">Eliminar Docente</button></a></li>
+                <li><a href="control_ingreso.html"><button class="btn" type="button">Registre su Ingreso Docente</button></a></li>
+                <li><a href="listar_docentes.php"><button class="btn" type="button">Ir a Ingresos Docentes</button></a></li>
             </ul>
-        </aside>
+            <section class="caja c3">
+                <figure class="figure1">
+                    <img class="severus" src="assets/img/severus.jpg" alt="Imagen Principal Docencia" >
+                    <figcaption class="figcaption1">Severus Snape</figcaption>
+                </figure>
+                <p>Snape es un profesor odiado por todos, excepto por los alumnos de su casa. Algunos incluso le temen, como es el caso de Neville Longbottom (cuyo boggart se convierte en el profesor), y es frecuente que su carácter sea descrito como ácido, desagradable, sarcástico e incluso cruel.</p>
+            </section>
+            <aside class="caja c4">
+                <h3>Enlaces útiles</h3>
+                <ul>
+                    <li><a href="#faq">Preguntas frecuentes</a></li>
+                    <li><a href="#testimonios">Testimonios</a></li>
+                </ul>
+            </aside>    
+        </main> 
         
-    </main>
-    <footer>
-        <p>&copy; 2023 Nombre de la Empresa. Todos los derechos reservados.</p>
-        <nav>
-            <ul>
-                <li><a href="#privacidad">Política de privacidad</a></li>
-                <li><a href="#terminos">Términos de servicio</a></li>
-            </ul>
-        </nav>
-    </footer>
+        <footer class="caja c5">
+            <p>&copy; 2023 Coffe&Tea. Todos los derechos reservados.</p>
+            <nav>
+                <ul class="nav">
+                    <li><a href="privacidad.html">Política de privacidad</a></li>
+                    <li><a href="#terminos">Términos de servicio</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
 </body>
 </html>

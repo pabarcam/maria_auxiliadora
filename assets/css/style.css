@@ -1,6 +1,8 @@
 body {
-    background-color: gray;
-}
+    background-color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    }
 h1 {
     color: #1e1f1e; /* Color del texto (verde en este ejemplo) */
     font-size: 2.5em; /* Tamaño de la fuente */
@@ -14,33 +16,6 @@ h1 {
     letter-spacing: 2px; /* Espaciado entre letras */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra del texto */
 }
-nav {
-    background-color: #333; /* Color de fondo de la barra de navegación */
-}
-
-nav ul {
-    justify-content: space-around; /* Distribuir los elementos de la lista de manera uniforme */
-    padding: 10px; /* Añadir relleno a la lista */
-}
-nav li {
-    display: inline; /* Hacer que los elementos de la lista se muestren en línea */
-}
-main { 
-    display: flex;
-}
-section {
-    flex: 1;
-}
-
-/* Estilos para el aside */
-aside {
-    background-color: #f4f4f4;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 200px; /* O ajusta según tus necesidades */
-}
-
 .btn {
     display: inline-block;
     padding: 10px 20px;
@@ -59,14 +34,72 @@ aside {
 .btn:hover {
     background-color: #2980b9; /* Cambia el color de fondo al pasar el ratón */
 }
-.cont_severus {
-    width: 300px; /* Ancho del contenedor */
-    height: 300px; /* Altura del contenedor */
-    border: 1px solid #ccc; /* Borde para visualizar el contenedor */
-    position: relative; /* Establecer posición relativa para los elementos hijos */
+
+
+.grid-layout {
+    height: 540px;
+    display: grid;
+    grid-template-areas:    'cabecera cabecera'
+                            'menu menu'
+                            'contenido lateral'
+                            'footer footer';
+    grid-template-rows: 20% 15% auto 15%;
+
+    background-color: lightgreen;
+  
+}   
+.caja { 
+    background-color: lightgray;
+    text-align: center;
+
 }
+
+.nav li{
+    display:inline;
+    
+}
+
+.c1 {
+    grid-area: cabecera;
+    background-color: grey;
+}
+.c2 {
+    grid-area: menu;
+    background-color:lightslategray;
+}
+.c3 {
+    display: flex;
+    grid-area: contenido;
+    background-color: wheat;    
+}
+.c4 {
+    grid-area: lateral;
+    background-color: lawngreen ;
+}
+.c5 {
+    grid-area: footer;
+    background-color: lightblue;
+}
+
+.figure1 {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 220px;
+    margin: auto;
+  }
+
 .severus {
-    width: 100%; /* Hacer que la imagen ocupe el 100% del contenedor */
-    height: 100%; /* Hacer que la imagen ocupe el 100% del contenedor */
-    object-fit: cover; /* Ajustar la imagen para cubrir completamente el contenedor manteniendo la relación de aspecto */;
+    max-width: 350px;
+    max-height: 300px;
+    object-fit: cover;
 }
+.figcaption1 {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+  }
+  
